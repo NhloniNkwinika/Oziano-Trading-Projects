@@ -182,13 +182,18 @@ h1{
   .vals{
     font-family: cursive;
     margin-top: 20px;
+    color: black;
     text-decoration:underline;
   }
-
+.valuesvision{
+    color:rgb(59, 57, 57);
+    padding: 20px;
+    margin: 10px;
+}
   .form-container {
     background: #fff;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 4px 10px 10px 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 90px auto;
@@ -224,7 +229,9 @@ h1{
     margin: 30px;
     padding: 30px;
 }
-
+.options{
+    color:rgb(0, 195, 255);
+}
 footer {
     background-color: rgb(199, 197, 197);
     padding: 20px;
@@ -239,6 +246,33 @@ footer {
 .footer-content h6 {
     margin: 0;
     color: white;
+}
+
+.icon-container {
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 20px;
+}
+
+.icon-container i {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #d83939;
+}
+.icon-container i:hover {
+    color: rgb(0, 195, 255);
+}
+
+
+#about{
+    background-color: rgb(238, 234, 234);
+    padding: 20px;
+}
+#services{
+    background-color: 
+}
+#contact{
+    background-color:rgb(238, 234, 234);
 }
 @media screen and (max-width: 768px) {
  
@@ -323,9 +357,15 @@ footer {
 
     .form-container {
 
-        padding: 20px;
+        padding: 10px;
         margin:20px auto;
         margin-top: 30px;
+    }
+   
+    
+    .icon-container i {
+        font-size: 25px;
+        margin-bottom: 15px;
     }
 
 }
