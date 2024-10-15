@@ -428,7 +428,10 @@ footer {
         margin-bottom: 15px;
     }
 
-
+    .video-responsive{
+        object-fit: cover;
+        object-position: center
+    }
     .whyContent {
         display: flex;
         flex-direction: column;
