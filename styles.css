@@ -275,10 +275,26 @@ footer {
 
 
 
-.video-responsive{
-    max-width: 640px;
-    max-height: 360px;
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Allows for height to adjust based on width */
+    overflow: hidden; /* Prevents overflow if aspect ratio doesn't match */
 }
+
+.video-responsive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto; /* Allows the width to adjust */
+    height: auto; /* Allows the height to adjust */
+    transform: translate(-50%, -50%); /* Centers the video */
+}
+
 .whyContent{
     
     display: flex;
@@ -428,10 +444,7 @@ footer {
         margin-bottom: 15px;
     }
 
-    .video-responsive{
-        object-fit: cover;
-        object-position: center
-    }
+ 
     .whyContent {
         display: flex;
         flex-direction: column;
