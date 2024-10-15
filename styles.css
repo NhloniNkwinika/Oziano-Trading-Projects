@@ -276,14 +276,12 @@ footer {
 
 
 
-
 .video-container {
     position: relative;
     width: 100%;
-    height: auto; /* Allows for height to adjust based on width */
-    overflow: hidden; /* Prevents overflow if aspect ratio doesn't match */
+    height: auto; /* Adjusts height based on width */
+    overflow: hidden;
 }
-
 
 
 .whyContent{
@@ -437,6 +435,9 @@ footer {
     }
 
  
+    
+  
+
     .whyContent {
         display: flex;
         flex-direction: column;
