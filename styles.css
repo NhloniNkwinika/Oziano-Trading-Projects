@@ -10,7 +10,7 @@ body {
 
 header {
     width: 100%;
-    background: #0c0b0b;
+    background: rgb(56, 54, 54);
     position: fixed;
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@ header {
 .home {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 60vh; 
     overflow: hidden;
 }
 .home-pic {
@@ -89,7 +89,7 @@ header {
 
 .home-pic h2 {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 10px;
     transform: translateY(-50%);
     padding: 2px;
@@ -97,7 +97,7 @@ header {
 }
 .home-pic button {
     position: absolute;
-    top: 62%;
+    top: 85%;
     left: 6%;
     transform: translate(-50%, -50%);
     background-color: #ff0000;
@@ -148,47 +148,24 @@ h1{
     
 }
 
-/* overlay stuff*/
-
-.country-details{
-    width: 100%;
-    height:100%;
-    top:0;
-    left:0;
-    position: absolute;
-    background: rgba(0,0,0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    flex-direction: column;
-    opacity: 0;
-    transition: 0.6s;
-    color:#fff;
-  }
-  .country-details:hover{
-    opacity:1;
-  }
-  .country-details > *{
-    transform:translateY(25px);
-    transition: transform 0.6s;
-  }
-  .country-details:hover > *{
-    transform: translateY(0.9px);
-  }
 
   .aboutUs{
     text-align: center;
   }
   .vals{
     font-family: cursive;
+    font-size:30px;
     margin-top: 20px;
-    color: black;
+    color: white;
     text-decoration:underline;
   }
 .valuesvision{
-    color:rgb(59, 57, 57);
+    color:white;
+     background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
     padding: 20px;
     margin: 10px;
+    border-bottom-left-radius: 250px;
+
 }
   .form-container {
     background: #fff;
@@ -230,7 +207,7 @@ h1{
     padding: 30px;
 }
 .options{
-    color:rgb(0, 195, 255);
+    color:rgb(16, 17, 17);
 }
 footer {
     background-color: rgb(199, 197, 197);
@@ -264,6 +241,86 @@ footer {
 }
 
 
+
+
+/* Container to hold the slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Slideshow elements */
+.mySlides {
+    display: none;
+}
+
+/* Image styling for the zoom effect */
+.mySlides img {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease; /* Smooth zoom over 5 seconds */
+}
+
+/* Zoom-in effect */
+.zoom img {
+    transform: scale(0.9); /* Slightly zoom in the image */
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+
+.video-responsive{
+    max-width: 640px;
+    max-height: 360px;
+}
+.whyContent{
+    
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+}
+.whyContent .col-12 {
+    flex: 1;
+    padding: 10px;
+  }
+.why{
+    background-color: white;
+    text-align: left;
+    color: rgb(87, 84, 84);
+    padding: 20px;
+}
+
+/* Initially, keep the content off-screen (to the right) */
+
+  
+.impact{
+    background: linear-gradient(117.5deg, rgb(89, 233, 162) 20.5%, rgb(29, 209, 185) 100.2%);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    border-top-right-radius: 250px;
+    
+}
+.hover-image {
+    /* Set a width for the image */
+    transition: transform 0.3s ease; /* Smooth transition for the movement */
+}
+
+.hover-image:hover {
+    transform: translate(10px, -25px); /* Moves the image 10px to the right and 10px up */
+}
+
+
+
 #about{
     background-color: rgb(238, 234, 234);
     padding: 20px;
@@ -274,6 +331,9 @@ footer {
 #contact{
     background-color:rgb(238, 234, 234);
 }
+
+
+
 @media screen and (max-width: 768px) {
  
 
@@ -340,18 +400,18 @@ footer {
           
     }
     .home-pic h2 {
-        font-size: 20px;
+        font-size: 30px;
         text-align:start;
-        padding: 8px;
+        top:250px;
         max-width: 250px;
         color:#fff;
     }
     
     .home-pic button {
         left:75px;
-        top: 65%;
-        padding: 8px 16px;
-        font-size: 14px;
+        top: 57%;
+        padding: 10px 20px;
+        font-size: 15px;
         background-color: #ff0000;
     }
 
@@ -367,6 +427,37 @@ footer {
         font-size: 25px;
         margin-bottom: 15px;
     }
+
+
+    .whyContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .whyContent .col-12 {
+        width: 100%;
+        padding: 10px;
+      }
+    
+    
+  
+      .content-to-animate {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 1s ease-out, opacity 1s ease-out;
+      }
+      
+      /* Once in view, slide in and stay */
+      .content-visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .empd{
+        margin: 30px;
+      }
+      
 
 }
 
