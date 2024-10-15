@@ -350,7 +350,7 @@ footer {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
  
 
     .nav-links {
@@ -363,6 +363,7 @@ footer {
         flex-direction: column;
         align-items: center;
         width: auto;
+        margin: auto;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
